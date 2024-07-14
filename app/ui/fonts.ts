@@ -5,5 +5,5 @@ export const Elianto = localFont({
 })
 
 export const RussoOne = localFont({
-    src: '../fonts/Russo-Regular.ttf',
+    src: '../fonts/Russo_One.ttf',
 })
