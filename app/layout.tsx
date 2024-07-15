@@ -3,23 +3,22 @@ import "./globals.css";
 import { Elianto } from "@/app/ui/fonts";
 import Header from "@/app/ui/Header";
 
-
 export const metadata: Metadata = {
-  title: "LA Fest",
-  description: "The Colosseum reopens after an interlude of VI years. Here the fight isn't over till only the winner stands. Legacy Repeats. The promised land awaits your arrival.",
+    title: "LA Fest",
+    description: "The Colosseum reopens after an interlude of VI years. Here the fight isn't over till only the winner stands. Legacy Repeats. The promised land awaits your arrival.",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={Elianto.className}>
-        <Header />
-        {children}
-      </body>
-    </html>
+    return (
+        <html lang="en">
+            <body className={`${Elianto.className} antialiased w-screen h-screen flex flex-col`}>
+                <Header />
+                {children}
+            </body>
+        </html>
   );
 }
