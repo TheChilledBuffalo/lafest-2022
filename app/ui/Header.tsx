@@ -11,10 +11,10 @@ export default function Header() {
                    LA FEST
               </Link>
              <div className={"flex flex-row absolute right-0 p-5 gap-x-4 text-lg"}>
-                 <HeaderPageLink title={"LEGACY"} url={"../legacy"} />
-                 <HeaderPageLink title={"EVENTS"} url={"../events"} />
-                 <HeaderPageLink title={"RULES"} url={"../rules"} />
-                 <HeaderPageLink title={"ABOUT US"} url={"../about-us"} />
+                 <HeaderPageLink title={"LEGACY"} url={"/legacy"} />
+                 <HeaderPageLink title={"EVENTS"} url={"/events"} />
+                 <HeaderPageLink title={"RULES"} url={"/rules"} />
+                 <HeaderPageLink title={"ABOUT US"} url={"/about-us"} />
              </div>
          </div>
      )
@@ -25,11 +25,10 @@ type HeaderProps = {
     url: string
 }
 
-export  function HeaderPageLink(
+function HeaderPageLink(
     { title, url }: HeaderProps,
 ) {
     const currentPath = usePathname();
-    const pathName = `/${url.slice(3)}`
 
     return (
         <Link
@@ -37,7 +36,7 @@ export  function HeaderPageLink(
             className={clsx(
                 "rounded-2xl px-2 duration-500 hover:tracking-[4px] hover:bg-white hover:text-black",
                 {
-                    "text-black bg-white tracking-[4px]": currentPath === pathName
+                    "text-black bg-white tracking-[4px]": currentPath === url
                 }
             )}
         >
