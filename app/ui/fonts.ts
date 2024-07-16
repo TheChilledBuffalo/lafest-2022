@@ -9,3 +9,7 @@ export const RussoOne = Russo_One({
     weight: "400",
     subsets: ["latin"]
 });
+
+export const Helvetica = localFont({
+    src: '../fonts/Helvetica.ttf',
+})
