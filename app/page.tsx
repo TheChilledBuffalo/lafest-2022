@@ -4,7 +4,7 @@ import SocialWidget from "@/app/ui/SocialWidget";
 
 export default function Home() {
     return (
-        <div className={"h-screen w-screen relative"}>
+        <div className={"h-full w-full fixed"}>
             <div className={"absolute h-full w-full flex flex-col items-center justify-center"}>
                 <Image
                     src="/logo_white.png"

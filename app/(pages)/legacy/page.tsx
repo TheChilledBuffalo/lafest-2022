@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Legacy() {
     return (
-        <div className={`${Helvetica.className} w-screen mt-5 flex flex-col justify-center font-semibold text-center`}>
+        <div className={`${Helvetica.className} w-full mt-5 flex flex-col justify-center font-semibold text-center`}>
             <div>
                 In November 1996, Vivek Krishnan, Harish K., Rahul Warrier and their 12th standard classmates pleaded with the class teacher:<br />
                 "Madam, we need a break from the grind of textbooks and classes... let's organise an inter-school arts festival."<br />

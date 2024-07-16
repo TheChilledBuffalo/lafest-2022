@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${Elianto.className} antialiased w-screen h-screen flex flex-col`}>
+            <body className={`${Elianto.className} antialiased w-full h-full`}>
                 <Header />
                 {children}
             </body>
