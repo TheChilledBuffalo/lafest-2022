@@ -17,7 +17,9 @@ First, install dependencies:
 ```bash
 pnpm install
 ```
+
 Then run the local development server:
+
 ```bash
 pnpm run dev
 ```
