@@ -1,5 +1,5 @@
-import localFont from "next/font/local";
 import { Russo_One } from "next/font/google";
+import localFont from "next/font/local";
 
 export const Elianto = localFont({
   src: "../fonts/Elianto-Regular.ttf",

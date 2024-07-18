@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import "./globals.css";
 import { Elianto } from "@/app/ui/fonts";
 import NavBar from "@/app/ui/NavBar";
+import type { Metadata } from "next";
 import React from "react";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "LA Fest",
@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (

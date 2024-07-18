@@ -1,5 +1,4 @@
 import { Helvetica } from "@/app/ui/fonts";
-import React from "react";
 import LegacyCard from "@/app/ui/LegacyCard";
 import { Separator } from "@/components/ui/separator";
 

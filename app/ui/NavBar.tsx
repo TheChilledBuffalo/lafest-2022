@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 import clsx from "clsx";
+import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import { Separator } from "@/components/ui/separator";
 
 export default function NavBar() {
   const [header, setHeader] = useState(false);
@@ -43,7 +43,11 @@ export default function NavBar() {
         className={`sticky top-0 z-10 flex w-full flex-row items-center p-5 font-semibold tracking-wide antialiased duration-200 ${header ? "-translate-y-[100%]" : ""} ${headerColor || showMenu ? "bg-black" : "bg-transparent"}`}
       >
         <div>
-          <Link href={"/"} className={"text-3xl"}>
+          <Link
+            href={"/"}
+            className={"text-3xl"}
+            onClick={() => setShowMenu(false)}
+          >
             LA FEST
           </Link>
         </div>
@@ -71,25 +75,52 @@ export default function NavBar() {
                 src={"/hamburger.svg"}
                 alt={"Menu"}
                 width={40}
-                height={40} />
+                height={40}
+              />
             )}
           </button>
         </div>
       </nav>
       <div
-        className={`fixed z-10 h-full w-full flex-col justify-center items-center bg-black bg-opacity-80 pb-32 ${
-          showMenu ? 'flex' : 'hidden'
+        className={`fixed z-10 h-full w-full flex-col items-center justify-center bg-black bg-opacity-80 pb-32 text-2xl ${
+          showMenu ? "flex" : "hidden"
         }`}
       >
-        <Link href="/" className={"p-5"} onClick={() => setShowMenu(!showMenu)}>HOME</Link>
+        <Link href="/" className={"p-5"} onClick={() => setShowMenu(!showMenu)}>
+          HOME
+        </Link>
         <Separator className={"w-2/3"} />
-        <Link href={"/legacy"} className={"p-5"} onClick={() => setShowMenu(!showMenu)}>LEGACY</Link>
+        <Link
+          href={"/legacy"}
+          className={"p-5"}
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          LEGACY
+        </Link>
         <Separator className={"w-2/3"} />
-        <Link href={"/events"} className={"p-5"} onClick={() => setShowMenu(!showMenu)}>EVENTS</Link>
+        <Link
+          href={"/events"}
+          className={"p-5"}
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          EVENTS
+        </Link>
         <Separator className={"w-2/3"} />
-        <Link href={"/rules"} className={"p-5"} onClick={() => setShowMenu(!showMenu)}>RULES</Link>
+        <Link
+          href={"/rules"}
+          className={"p-5"}
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          RULES
+        </Link>
         <Separator className={"w-2/3"} />
-        <Link href={"/about-us"} className={"p-5"} onClick={() => setShowMenu(!showMenu)}>ABOUT US</Link>
+        <Link
+          href={"/about-us"}
+          className={"p-5"}
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          ABOUT US
+        </Link>
       </div>
     </>
   );
