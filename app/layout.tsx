@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Elianto } from "@/app/ui/fonts";
-import Header from "@/app/ui/Header";
+import NavBar from "@/app/ui/NavBar";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "LA Fest",
@@ -10,14 +11,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={`${Elianto.className} h-full w-full antialiased`}>
-        <Header />
+        <NavBar />
         {children}
       </body>
     </html>

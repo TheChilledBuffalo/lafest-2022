@@ -4,26 +4,26 @@ import SocialWidget from "@/app/ui/SocialWidget";
 
 export default function Home() {
   return (
-    <div className={"fixed h-full w-full"}>
+    <>
       <div
         className={
-          "absolute flex h-full w-full flex-col items-center justify-center"
+          "absolute flex h-full w-full flex-col items-center justify-center p-6 top-0"
         }
       >
         <Image
           src="/logo_white.png"
           alt={"LA Fest Logo"}
-          height={400}
-          width={400}
+          height={500}
+          width={500}
         />
-        <h1 className={`${RussoOne.className} m-2 text-center text-3xl`}>
+        <h1 className={`${RussoOne.className} m-2 text-center text-2xl lg:text-3xl`}>
           A DAY IN REALITY <br />
           AN EPOCH IN MEMORY
         </h1>
       </div>
       <div
         className={
-          "absolute z-10 mx-5 flex h-full flex-col items-center justify-center gap-5 invert"
+          "absolute mx-0 lg:mx-5 my-5 lg:my-0 h-max lg:h-full w-full lg:w-max flex flex-row lg:flex-col items-center justify-center gap-5 invert bottom-0"
         }
       >
         <SocialWidget
@@ -39,6 +39,6 @@ export default function Home() {
           url={"https://www.instagram.com/lafest.22"}
         />
       </div>
-    </div>
+    </>
   );
 }
