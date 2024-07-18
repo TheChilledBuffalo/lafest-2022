@@ -12,7 +12,7 @@ export default function SocialWidget(Props: WidgetLinkImage) {
   return (
     <div
       className={
-        "hover:scale-125 h-5 w-5 transition flex justify-center items-center"
+        "flex h-5 w-5 items-center justify-center transition hover:scale-125"
       }
     >
       <Link href={Props.url} target={"_blank"}>

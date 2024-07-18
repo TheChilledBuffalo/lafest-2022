@@ -4,10 +4,10 @@ import SocialWidget from "@/app/ui/SocialWidget";
 
 export default function Home() {
   return (
-    <div className={"h-full w-full fixed"}>
+    <div className={"fixed h-full w-full"}>
       <div
         className={
-          "absolute h-full w-full flex flex-col items-center justify-center"
+          "absolute flex h-full w-full flex-col items-center justify-center"
         }
       >
         <Image
@@ -16,14 +16,14 @@ export default function Home() {
           height={400}
           width={400}
         />
-        <h1 className={`${RussoOne.className} text-center text-3xl m-2`}>
+        <h1 className={`${RussoOne.className} m-2 text-center text-3xl`}>
           A DAY IN REALITY <br />
           AN EPOCH IN MEMORY
         </h1>
       </div>
       <div
         className={
-          "z-10 h-full absolute flex flex-col items-center justify-center invert gap-5 mx-5"
+          "absolute z-10 mx-5 flex h-full flex-col items-center justify-center gap-5 invert"
         }
       >
         <SocialWidget

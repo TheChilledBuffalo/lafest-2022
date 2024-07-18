@@ -15,7 +15,7 @@ export default function LegacyCard(Props: LegacyCardProps) {
   return (
     <div
       className={
-        "w-3/5 flex flex-row items-center gap-x-5 bg-gray-900 rounded-xl"
+        "flex w-3/5 flex-row items-center gap-x-5 rounded-xl bg-gray-900"
       }
     >
       <div
@@ -28,7 +28,7 @@ export default function LegacyCard(Props: LegacyCardProps) {
           height={300}
         />
       </div>
-      <div className={"flex flex-col flex-1 p-5 gap-y-4 text-left"}>
+      <div className={"flex flex-1 flex-col gap-y-4 p-5 text-left"}>
         <div className={"text-xs font-normal"}>{Props.date}</div>
         <div className={"text-3xl font-bold"}>{Props.tagline}</div>
         <div className={"text-base font-normal"}>{Props.description}</div>
