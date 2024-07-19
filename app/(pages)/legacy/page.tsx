@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 export default function Legacy() {
   return (
     <div
-      className={`${Helvetica.className} mt-5 flex w-full flex-col justify-center text-center font-semibold`}
+      className={`${Helvetica.className} mt-5 flex w-full flex-col justify-center p-5 text-center font-semibold`}
     >
       <div>
         In November 1996, Vivek Krishnan, Harish K., Rahul Warrier and their
@@ -32,7 +32,7 @@ export default function Legacy() {
         <br />
         Her students would ensure that, year after year.
       </div>
-      <Separator className={"my-10 w-2/5 self-center"} />
+      <Separator className={"my-10 w-2/3 self-center lg:w-2/5"} />
       <div className={"mb-10 flex h-full flex-col items-center gap-y-10"}>
         <LegacyCard
           bgClassName={"bg-[#aa9250]"}
