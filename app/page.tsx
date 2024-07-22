@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div
         className={
-          "absolute top-0 flex h-full w-full flex-col items-center justify-center p-6"
+          "absolute top-0 flex h-full w-full flex-col items-center justify-center p-6 select-none"
         }
       >
         <Image
