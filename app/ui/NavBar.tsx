@@ -140,7 +140,7 @@ function NavBarLink({ title, url }: NavBarProps) {
       className={clsx(
         "rounded-2xl px-2 duration-500 hover:bg-white hover:tracking-[4px] hover:text-black",
         {
-          "bg-white tracking-[4px] text-black": currentPath === url,
+          "bg-white tracking-[4px] text-black": currentPath.includes(url),
         },
       )}
     >

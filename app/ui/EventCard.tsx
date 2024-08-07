@@ -16,8 +16,8 @@ export default function EventCard(Props: EventCardProps) {
       scale={1.1}
       tiltMaxAngleX={10}
       tiltMaxAngleY={10}
-      className={`${Props.shadow} rounded-xl`}>
-      <div className={"w-[325px] h-[180px] rounded-xl"}>
+      className={`${Props.shadow} rounded-xl w-[325px] h-[180px] `}>
+      <div className={"rounded-xl"}>
         <Link href={Props.linkPath}>
           <Image
             src={Props.imagePath}
