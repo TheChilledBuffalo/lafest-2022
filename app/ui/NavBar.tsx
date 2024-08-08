@@ -40,7 +40,7 @@ export default function NavBar() {
   return (
     <>
       <nav
-        className={`sticky top-0 z-10 flex w-full flex-row items-center p-5 font-semibold tracking-wide antialiased duration-200 select-none ${header ? "-translate-y-[100%]" : ""} ${headerColor || showMenu ? "bg-black" : "bg-transparent"}`}
+        className={`sticky top-0 z-10 flex w-full select-none flex-row items-center p-5 font-semibold tracking-wide antialiased duration-200 ${header ? "-translate-y-[100%]" : ""} ${headerColor || showMenu ? "bg-black" : "bg-transparent"}`}
       >
         <div>
           <Link
@@ -82,7 +82,7 @@ export default function NavBar() {
         </div>
       </nav>
       <div
-        className={`fixed z-10 h-full w-full flex-col items-center justify-center bg-black bg-opacity-80 pb-32 text-2xl select-none ${
+        className={`fixed z-10 h-full w-full select-none flex-col items-center justify-center bg-black bg-opacity-80 pb-32 text-2xl ${
           showMenu ? "flex" : "hidden"
         }`}
       >

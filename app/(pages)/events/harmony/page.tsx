@@ -1,7 +1,3 @@
 export default function Harmony() {
-  return (
-    <div>
-      Harmony
-    </div>
-  )
+  return <div>Harmony</div>;
 }

@@ -9,6 +9,7 @@ The project has been deployed using vercel. Visit [here](https://lafest-2022.ver
 - [NextJS](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Typescript](https://www.typescriptlang.org/)
+- [React Parallax Tilt](https://github.com/mkosir/react-parallax-tilt)
 
 ## How To Run Locally
 
