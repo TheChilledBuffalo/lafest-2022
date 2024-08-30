@@ -11,12 +11,12 @@ export default function Events() {
         className={"flex h-auto flex-col justify-center gap-y-10 lg:gap-y-24"}
       >
         <EventCard
-          shadow={"hover:lg:shadow-[1px_4px_37px_1px_#1ED760]"}
+          shadow={"hover:shadow-[1px_4px_37px_1px_#1ED760]"}
           imagePath={"/events/harmony.png"}
           linkPath={"events/harmony"}
         />
         <EventCard
-          shadow={"hover:lg:shadow-[1px_4px_37px_1px_#00bfff]"}
+          shadow={"hover:shadow-[1px_4px_37px_1px_#00bfff]"}
           imagePath={"/events/lebate.jpg"}
           linkPath={"events/lebate"}
         />
@@ -25,17 +25,17 @@ export default function Events() {
         className={"flex h-full flex-col justify-center gap-y-10 lg:gap-y-24"}
       >
         <EventCard
-          shadow={"hover:lg:shadow-[1px_4px_37px_1px_#EDCE80]"}
+          shadow={"hover:shadow-[1px_4px_37px_1px_#EDCE80]"}
           imagePath={"/events/dance.png"}
           linkPath={"events/dance"}
         />
         <EventCard
-          shadow={"hover:lg:shadow-[1px_4px_37px_1px_#ffffff]"}
+          shadow={"hover:shadow-[1px_4px_37px_1px_#ffffff]"}
           imagePath={"/events/lapersona.jpg"}
           linkPath={"events/lapersona"}
         />
         <EventCard
-          shadow={"hover:lg:shadow-[1px_4px_37px_1px_#7200fd]"}
+          shadow={"hover:shadow-[1px_4px_37px_1px_#7200fd]"}
           imagePath={"/events/enquesta.jpg"}
           linkPath={"events/enquesta"}
         />
@@ -44,12 +44,12 @@ export default function Events() {
         className={"flex h-full flex-col justify-center gap-y-10 lg:gap-y-24"}
       >
         <EventCard
-          shadow={"hover:lg:shadow-[1px_4px_37px_1px_#FF3F01]"}
+          shadow={"hover:shadow-[1px_4px_37px_1px_#FF3F01]"}
           imagePath={"/events/block.png"}
           linkPath={"events/block"}
         />
         <EventCard
-          shadow={"hover:lg:shadow-[1px_4px_37px_1px_#342dfc]"}
+          shadow={"hover:shadow-[1px_4px_37px_1px_#342dfc]"}
           imagePath={"/events/lattire.png"}
           linkPath={"events/lattire"}
         />
