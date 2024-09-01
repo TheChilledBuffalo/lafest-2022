@@ -29,6 +29,11 @@ export default function NavBar() {
     }
   }
 
+  function HamburgerClick() {
+    setShowMenu(!showMenu);
+    document.querySelector('body')?.classList.toggle("overflow-hidden");
+  }
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       hideHeader();
@@ -62,7 +67,7 @@ export default function NavBar() {
           <NavBarLink title={"ABOUT US"} url={"/about-us"} />
         </div>
         <div className={"absolute right-0 flex px-5 invert lg:hidden"}>
-          <button onClick={() => setShowMenu(!showMenu)}>
+          <button onClick={HamburgerClick}>
             {showMenu ? (
               <Image
                 src={"/x-mark.svg"}
@@ -86,14 +91,14 @@ export default function NavBar() {
           showMenu ? "flex" : "hidden"
         }`}
       >
-        <Link href="/" className={"p-5"} onClick={() => setShowMenu(!showMenu)}>
+        <Link href="/" className={"p-5"} onClick={HamburgerClick}>
           HOME
         </Link>
         <Separator className={"w-2/3"} />
         <Link
           href={"/legacy"}
           className={"p-5"}
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={HamburgerClick}
         >
           LEGACY
         </Link>
@@ -101,7 +106,7 @@ export default function NavBar() {
         <Link
           href={"/events"}
           className={"p-5"}
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={HamburgerClick}
         >
           EVENTS
         </Link>
@@ -109,7 +114,7 @@ export default function NavBar() {
         <Link
           href={"/rules"}
           className={"p-5"}
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={HamburgerClick}
         >
           RULES
         </Link>
@@ -117,7 +122,7 @@ export default function NavBar() {
         <Link
           href={"/about-us"}
           className={"p-5"}
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={HamburgerClick}
         >
           ABOUT US
         </Link>
