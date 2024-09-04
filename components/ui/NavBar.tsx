@@ -91,7 +91,7 @@ export default function NavBar() {
           showMenu ? "flex" : "hidden"
         }`}
       >
-        <Link href="/public" className={"p-5"} onClick={HamburgerClick}>
+        <Link href="/" className={"p-5"} onClick={HamburgerClick}>
           HOME
         </Link>
         <Separator className={"w-2/3"} />
