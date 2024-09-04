@@ -2,7 +2,7 @@ import { Russo_One } from "next/font/google";
 import localFont from "next/font/local";
 
 export const Elianto = localFont({
-  src: "../fonts/Elianto-Regular.ttf",
+  src: "../app/fonts/Elianto-Regular.ttf",
 });
 
 export const RussoOne = Russo_One({
@@ -11,5 +11,5 @@ export const RussoOne = Russo_One({
 });
 
 export const Helvetica = localFont({
-  src: "../fonts/Helvetica.ttf",
+  src: "../app/fonts/Helvetica.ttf",
 });

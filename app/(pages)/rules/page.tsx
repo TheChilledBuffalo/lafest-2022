@@ -1,4 +1,4 @@
-import { Helvetica, RussoOne } from "@/app/ui/fonts";
+import { Helvetica, RussoOne } from "@/components/fonts";
 
 export default function Rules() {
   return (

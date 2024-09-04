@@ -1,5 +1,5 @@
-import { Helvetica } from "@/app/ui/fonts";
-import LegacyCard from "@/app/ui/LegacyCard";
+import { Helvetica } from "@/components/fonts";
+import LegacyCard from "@/components/ui/LegacyCard";
 import { Separator } from "@/components/ui/separator";
 
 export default function Legacy() {

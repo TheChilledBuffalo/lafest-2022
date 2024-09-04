@@ -1,5 +1,5 @@
-import { Elianto } from "@/app/ui/fonts";
-import NavBar from "@/app/ui/NavBar";
+import { Elianto } from "@/components/fonts";
+import NavBar from "@/components/ui/NavBar";
 import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";

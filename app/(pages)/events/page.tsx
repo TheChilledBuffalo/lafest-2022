@@ -1,4 +1,4 @@
-import EventCard from "@/app/ui/EventCard";
+import EventCard from "@/components/ui/EventCard";
 
 export default function Events() {
   return (

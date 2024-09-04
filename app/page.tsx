@@ -1,5 +1,5 @@
-import { RussoOne } from "@/app/ui/fonts";
-import SocialWidget from "@/app/ui/SocialWidget";
+import { RussoOne } from "@/components/fonts";
+import SocialWidget from "@/components/ui/SocialWidget";
 import Image from "next/image";
 
 export default function Home() {
