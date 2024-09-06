@@ -10,6 +10,7 @@ The project has been deployed using vercel. Visit [here](https://lafest-2022.ver
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Typescript](https://www.typescriptlang.org/)
 - [React Parallax Tilt](https://github.com/mkosir/react-parallax-tilt)
+- [Magic UI](https://magicui.design/)
 
 ## How To Run Locally
 
