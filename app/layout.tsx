@@ -3,6 +3,7 @@ import NavBar from "@/components/ui/NavBar";
 import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
+import Particles from "@/components/ui/particles";
 
 export const metadata: Metadata = {
   title: "LA Fest",
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${Elianto.className} h-full w-full antialiased`}>
         <NavBar />
+        <Particles className={"fixed inset-0 z-[-10]"} />
         {children}
       </body>
     </html>
