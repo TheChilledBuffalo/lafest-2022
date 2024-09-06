@@ -31,7 +31,7 @@ export default function NavBar() {
 
   function HamburgerClick() {
     setShowMenu(!showMenu);
-    document.querySelector('body')?.classList.toggle("overflow-hidden");
+    document.querySelector("body")?.classList.toggle("overflow-hidden");
   }
 
   useEffect(() => {
@@ -95,35 +95,19 @@ export default function NavBar() {
           HOME
         </Link>
         <Separator className={"w-2/3"} />
-        <Link
-          href={"/legacy"}
-          className={"p-5"}
-          onClick={HamburgerClick}
-        >
+        <Link href={"/legacy"} className={"p-5"} onClick={HamburgerClick}>
           LEGACY
         </Link>
         <Separator className={"w-2/3"} />
-        <Link
-          href={"/events"}
-          className={"p-5"}
-          onClick={HamburgerClick}
-        >
+        <Link href={"/events"} className={"p-5"} onClick={HamburgerClick}>
           EVENTS
         </Link>
         <Separator className={"w-2/3"} />
-        <Link
-          href={"/rules"}
-          className={"p-5"}
-          onClick={HamburgerClick}
-        >
+        <Link href={"/rules"} className={"p-5"} onClick={HamburgerClick}>
           RULES
         </Link>
         <Separator className={"w-2/3"} />
-        <Link
-          href={"/about-us"}
-          className={"p-5"}
-          onClick={HamburgerClick}
-        >
+        <Link href={"/about-us"} className={"p-5"} onClick={HamburgerClick}>
           ABOUT US
         </Link>
       </div>

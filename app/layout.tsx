@@ -1,9 +1,9 @@
 import { Elianto } from "@/components/fonts";
 import NavBar from "@/components/ui/NavBar";
+import Particles from "@/components/ui/particles";
 import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
-import Particles from "@/components/ui/particles";
 
 export const metadata: Metadata = {
   title: "LA Fest",
