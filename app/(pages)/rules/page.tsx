@@ -1,4 +1,4 @@
-import { Helvetica, RussoOne } from "@/components/fonts";
+import { RussoOne, InterFont } from "@/components/fonts";
 
 export default function Rules() {
   return (
@@ -7,7 +7,7 @@ export default function Rules() {
         General Rules
       </div>
       <div
-        className={`${Helvetica.className} flex justify-center px-10 pb-10 text-xl`}
+        className={`${InterFont.className} flex justify-center px-10 pb-10 text-xl font-medium`}
       >
         <ol className={"flex list-decimal flex-col gap-3"}>
           <li>

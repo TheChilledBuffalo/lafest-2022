@@ -21,7 +21,13 @@ export default function NavBar() {
     }
   }
 
+  const currentPath = usePathname();
+
   function headerBackground() {
+    if (currentPath.includes("about-us")) {
+      setHeaderColor(false);
+      return;
+    }
     if (window.scrollY > 40) {
       setHeaderColor(true);
     } else {
