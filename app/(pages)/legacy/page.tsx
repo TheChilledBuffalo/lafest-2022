@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 export default function Legacy() {
   return (
     <div
-      className={`${InterFont.className} mt-5 flex w-full flex-col justify-center p-5 text-center font-semibold text-lg`}
+      className={`${InterFont.className} mt-5 flex w-full flex-col justify-center p-5 text-center text-lg font-semibold`}
     >
       <div>
         In November 1996, Vivek Krishnan, Harish K., Rahul Warrier and their

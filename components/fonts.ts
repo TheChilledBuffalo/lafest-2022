@@ -1,5 +1,4 @@
-import { Russo_One } from "next/font/google";
-import { Inter } from "next/font/google";
+import { Inter, Russo_One } from "next/font/google";
 import localFont from "next/font/local";
 
 export const Elianto = localFont({
@@ -13,5 +12,5 @@ export const RussoOne = Russo_One({
 
 export const InterFont = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"]
-})
+  subsets: ["latin"],
+});

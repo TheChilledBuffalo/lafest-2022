@@ -1,4 +1,4 @@
-import { RussoOne, InterFont } from "@/components/fonts";
+import { InterFont, RussoOne } from "@/components/fonts";
 
 export default function Rules() {
   return (
