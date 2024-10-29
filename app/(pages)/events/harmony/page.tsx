@@ -1,29 +1,45 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 import { InterFont, RussoOne } from "@/components/fonts";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Harmony() {
+  const { scrollY } = useScroll();
+  const scrollValue = scrollY;
+  const negativeScrollValue = useTransform(scrollValue, (value) => -value);
+  const fasterScrollValue = useTransform(scrollValue, (value) => value * 1.8);
+
   return (
     <div className={"bg-[#0199FF] absolute top-0 h-full w-full"}>
       <section
         className={"h-screen w-full flex flex-col justify-center items-center relative overflow-hidden before:z-[1000] before:absolute before:bottom-0 before:w-full before:h-40 before:bg-gradient-to-t before:from-[#350053] before:to-transparent"}>
         <Image src={"/harmony/stars.png"} alt={"Stars"} width={2049} height={1152}
-               className={"absolute object-cover h-full w-full"} id={"stars"}/>
-        <Image src={"/harmony/pat.png"} alt={"Music"} width={2049} height={1152}
-               className={"absolute object-cover h-full w-full"} id={"music"} />
-        <Image src={"/harmony/moon.png"} alt={"Moon"} width={2049} height={1152}
-               className={"absolute mix-blend-screen object-cover h-full w-full"} id={"moon"}/>
+               className={"absolute object-cover h-full w-full"} />
+        <motion.div style={{translateX: scrollValue}} className={"absolute w-full h-full"}>
+          <Image src={"/harmony/pat.png"} alt={"Music"} width={2049} height={1152}
+                 className={"object-cover h-full w-full"} />
+        </motion.div>
+        <motion.div style={{translateY: fasterScrollValue}} className={"absolute mix-blend-screen h-full w-full"}>
+          <Image src={"/harmony/moon.png"} alt={"Moon"} width={2049} height={1152}
+                 className={"object-cover h-full w-full"} />
+        </motion.div>
         <Image src={"/harmony/pat2.png"} alt={"Music2"} width={2049} height={1152}
-               className={"absolute object-cover h-full w-full"} id={"music2"}/>
+               className={"absolute object-cover h-full w-full"} />
         <Image src={"/harmony/mountains_behind.png"} alt={"Mountains behind"} width={2049} height={1152}
-               className={"absolute object-cover h-full w-full"} id={"mountains_behind"}/>
-        <h2 className={"absolute z-20 text-6xl lg:text-9xl"} id={"text"}>Harmony</h2>
-        <Link href={"/events"} id={"btn"}
-              className={`${InterFont.className} absolute inline-block z-20 py-2 px-6 text-xl lg:text-2xl rounded-3xl bg-white translate-y-16 lg:translate-y-28 text-[#a200ff] font-semibold`}>
-          <button>Back to Events</button>
-        </Link>
+               className={"absolute object-cover h-full w-full"}/>
+        <motion.h2 className={"absolute z-20 text-7xl lg:text-9xl"} style={{translateX: negativeScrollValue}}>Harmony</motion.h2>
+        <motion.button
+          className={`${InterFont.className} absolute inline-block z-40 mt-40 lg:mt-52 py-2 px-6 text-xl lg:text-2xl rounded-3xl bg-white text-[#a200ff] font-semibold`}
+          style={{translateY: scrollValue}}
+        >
+          <Link href={"/events"}>
+            Back to Events
+          </Link>
+        </motion.button>
         <Image src={"/harmony/mountains_front.png"} alt={"Mountains front"} width={2049} height={1152}
-               className={"z-10 object-cover h-full w-full"} id={"mountains_front"}/>
+               className={"z-30 object-cover h-full w-full"}/>
       </section>
       <div className={"bg-[#350351] relative px-5 py-5 lg:px-24 flex flex-col gap-y-5"}>
         <h2 className={`${RussoOne.className} font-medium text-white text-xl lg:text-2xl tracking-wide`}>
