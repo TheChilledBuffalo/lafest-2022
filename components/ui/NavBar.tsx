@@ -12,6 +12,7 @@ export default function NavBar() {
   const [headerColor, setHeaderColor] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
+  const [transition, setTransition] = useState(true);
 
   function hideHeader() {
     if (window.scrollY > scrollY) {
@@ -48,10 +49,18 @@ export default function NavBar() {
     });
   });
 
+  useEffect(() => {
+    if (currentPath.includes("about-us") || currentPath.includes("events")) {
+      setTransition(false);
+    } else {
+      setTransition(true);
+    }
+  }, [currentPath]);
+
   return (
     <>
       <nav
-        className={`sticky top-0 z-50 flex w-full select-none flex-row items-center p-5 font-semibold tracking-wide antialiased duration-200 ${header ? "-translate-y-[100%]" : ""} ${headerColor || showMenu ? "bg-black" : "bg-transparent"}`}
+        className={`sticky top-0 z-50 flex w-full select-none flex-row items-center p-5 font-semibold tracking-wide antialiased duration-200 ${header ? "-translate-y-[100%]" : ""} ${headerColor || showMenu ? "bg-black bg-opacity-80" : "bg-transparent"} ${transition ? "" : "transition-none"}`}
       >
         <div>
           <Link
