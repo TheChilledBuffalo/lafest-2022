@@ -31,8 +31,7 @@ export default function Harmony() {
                className={"absolute object-cover h-full w-full"}/>
         <motion.h2 className={"absolute z-20 text-7xl lg:text-9xl"} style={{translateX: negativeScrollValue}}>Harmony</motion.h2>
         <motion.button
-          className={`${InterFont.className} absolute inline-block z-40 mt-40 lg:mt-52 py-2 px-6 text-xl lg:text-2xl rounded-3xl bg-white text-[#a200ff] font-semibold`}
-          style={{translateY: scrollValue}}
+          className={`${InterFont.className} fixed inline-block z-40 mt-40 lg:mt-52 py-2 px-6 text-xl lg:text-2xl rounded-3xl bg-white text-[#a200ff] font-semibold`}
         >
           <Link href={"/events"}>
             Back to Events
@@ -41,7 +40,7 @@ export default function Harmony() {
         <Image src={"/harmony/mountains_front.png"} alt={"Mountains front"} width={2049} height={1152}
                className={"z-30 object-cover h-full w-full"}/>
       </section>
-      <div className={"bg-[#350351] relative px-5 py-5 lg:px-24 flex flex-col gap-y-5"}>
+      <div className={"bg-[#350351] relative px-5 py-5 lg:px-24 flex flex-col gap-y-5 z-50"}>
         <h2 className={`${RussoOne.className} font-medium text-white text-xl lg:text-2xl tracking-wide`}>
           The Muses await in the Colosseum to meet their equals. Enchant the crowd with your musical prowess.
           Modulate your pitch, notes and chords to bewitch and sway the audience with your performances.
