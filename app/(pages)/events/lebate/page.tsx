@@ -24,7 +24,7 @@ export default function Harmony() {
                  className={"object-cover h-full w-full"} />
         </motion.div>
         <Image src={"/lebate/color_pattern.png"} alt={"Color Pattern Bottom"} width={2049} height={1152}
-               className={"absolute object-cover h-full w-full bottom-0 z-10"} />
+               className={"absolute pointer-events-none object-cover h-full w-full bottom-0 z-10"} />
         <div className={"fixed lg:absolute h-full w-full flex flex-col justify-center items-center pb-40 lg:pb-0 pr-0 lg:pr-40"}>
           <button
             className={`${InterFont.className} inline-block mt-40 lg:mt-52 py-2 px-6 text-xl lg:text-2xl rounded-3xl bg-white text-[#76A4DC] font-semibold`}
