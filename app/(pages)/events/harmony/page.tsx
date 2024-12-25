@@ -15,7 +15,7 @@ export default function Harmony() {
     <div className={"absolute top-0 h-full w-full bg-[#0199FF]"}>
       <section
         className={
-          "relative flex h-screen w-full flex-col items-center justify-center overflow-hidden before:absolute before:bottom-0 before:z-[1000] before:h-40 before:w-full before:bg-gradient-to-t before:from-[#350053] before:to-transparent"
+          "relative flex h-screen w-full flex-col items-center justify-center overflow-hidden before:absolute before:bottom-0 before:z-50 before:h-40 before:w-full before:bg-gradient-to-t before:from-[#350053] before:to-transparent"
         }
       >
         <Image
