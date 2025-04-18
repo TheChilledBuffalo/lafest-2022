@@ -13,7 +13,7 @@ export default function Harmony() {
     <div className={"absolute top-0 h-full w-full bg-[#4e93e8]"}>
       <section
         className={
-          "relative flex h-screen w-full flex-col items-center justify-center before:absolute before:bottom-0 before:z-50 before:h-40 before:w-full before:bg-gradient-to-t before:from-[#4e93e8] before:to-transparent"
+          "relative flex h-screen w-full flex-col items-center justify-center before:absolute before:bottom-0 before:z-50 before:h-40 before:w-full before:bg-linear-to-t before:from-[#4e93e8] before:to-transparent"
         }
       >
         <Image
