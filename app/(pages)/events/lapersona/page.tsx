@@ -1,3 +1,3 @@
-export default function Harmony() {
-  return <div>La Persona</div>;
+export default function Persona() {
+  return <div>La Persona (WIP)</div>;
 }

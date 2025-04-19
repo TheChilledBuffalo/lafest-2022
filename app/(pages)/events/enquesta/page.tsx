@@ -1,3 +1,3 @@
-export default function Harmony() {
-  return <div>Enquesta</div>;
+export default function Enquesta() {
+  return <div>Enquesta (WIP)</div>;
 }

@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Harmony() {
+export default function Lebate() {
   const { scrollY } = useScroll();
   const slowerScrollValue = useTransform(scrollY, (value) => value * 0.5);
 

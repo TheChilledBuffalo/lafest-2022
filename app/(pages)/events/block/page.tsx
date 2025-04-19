@@ -1,3 +1,3 @@
-export default function Harmony() {
-  return <div>Block</div>;
+export default function Block() {
+  return <div>Block (WIP)</div>;
 }
